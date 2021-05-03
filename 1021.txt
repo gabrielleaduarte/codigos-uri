@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        float a = entrada.nextFloat();
+
+        float n100 = a/100;
+        double r = (a % 100);
+
+        double n50 = r/50;
+        r = (r % 50);
+
+        double n20 = r/20;
+        r = (r % 20);
+
+        double n10 = r/10;
+        r = (r % 10);
+
+        double n5 = r/5;
+        r = (r % 5);
+
+        double n2 = r/2;
+        r = (r % 2);
+
+        double m1 = r/1;
+        r = (r % 1);
+
+        double m50 = r/0.50;
+        r = (r % 0.50);
+
+        double m25 = r/0.25;
+        r = (r % 0.25);
+
+        double m10 = r/0.10;
+        r = (r % 0.10);
+
+        double m5 = r/0.05;
+        r = (r % 0.05);
+
+        double m01 = r/0.01;
+        r = (r % 0.01);
+
+        System.out.println("NOTAS:");
+        System.out.println((int)n100 + " nota(s) de R$ 100.00");
+        System.out.println((int)n50 + " nota(s) de R$ 50.00");
+        System.out.println((int)n20 + " nota(s) de R$ 20.00");
+        System.out.println((int)n10 + " nota(s) de R$ 10.00");
+        System.out.println((int)n5 + " nota(s) de R$ 5.00");
+        System.out.println((int)n2 + " nota(s) de R$ 2.00");
+        System.out.println("MOEDAS:");
+        System.out.println((int)m1 + " moeda(s) de R$ 1.00");
+        System.out.println((int)m50 + " moeda(s) de R$ 0.50");
+        System.out.println((int)m25 + " moeda(s) de R$ 0.25");
+        System.out.println((int)m10 + " moeda(s) de R$ 0.10");
+        System.out.println((int)m5 + " moeda(s) de R$ 0.05");
+        System.out.println((int)m01 + " moeda(s) de R$ 0.01");
+    }
+}

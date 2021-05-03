@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double r = entrada.nextDouble();
+        double n = 3.14159;
+
+        System.out.println("A=" + String.format("%.4f", (n*r*r)));
+
+    }
+}

@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        double a = entrada.nextDouble();
+        double b = entrada.nextDouble();
+        double c = entrada.nextDouble();
+
+        double v1, v2, v3 = 0;
+
+        if (a>=b && a>=c){
+            v1 = a;
+            if (b>=c){
+                v2 = b;
+                v3 = c;
+            }else{
+                v2 = c;
+                v3 = b;
+            }
+        }else if (b>=a && b>=c){
+            v1 = b;
+            if (a>=c){
+                v2 = a;
+                v3 = c;
+            }else{
+                v2 = c;
+                v3 = a;
+            }
+        }else{
+            v1 = c;
+            if (a>=b){
+                v2 = a;
+                v3 = b;
+            }else{
+                v2 = b;
+                v3 = a;
+            }
+        }
+
+        if(v1>=(v2+v3)){
+            System.out.println("NAO FORMA TRIANGULO");
+        }else{
+            if ((v1 * v1) == ((v2 * v2) + (v3 * v3))) {
+                System.out.println("TRIANGULO RETANGULO");
+            }
+            if ((v1 * v1) > ((v2 * v2) + (v3 * v3))) {
+                System.out.println("TRIANGULO OBTUSANGULO");
+            }
+            if ((v1 * v1) < ((v2 * v2) + (v3 * v3))) {
+                System.out.println("TRIANGULO ACUTANGULO");
+            }
+            if (v1 == v2 || v1 == v3 || v2 == v3) {
+                if (v2 == v3 && v1 == v3) {
+                    System.out.println("TRIANGULO EQUILATERO");
+                } else {
+                    System.out.println("TRIANGULO ISOSCELES");
+                }
+            }
+        }
+    }
+}

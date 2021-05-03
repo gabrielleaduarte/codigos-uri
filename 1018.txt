@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int a = entrada.nextInt();
+
+        int n100 = a / 100;
+        int r = (a % 100);
+
+        int n50 = r/50;
+        r = (r % 50);
+
+        int n20 = r/20;
+        r = (r % 20);
+
+        int n10 = r/10;
+        r = (r % 10);
+
+        int n5 = r/5;
+        r = (r % 5);
+
+        int n2 = r/2;
+        r = (r % 2);
+
+        int n1 = r;
+        r = (r % 1);
+
+        System.out.println(a);
+        System.out.println(n100 + " nota(s) de R$ 100,00");
+        System.out.println(n50 + " nota(s) de R$ 50,00");
+        System.out.println(n20 + " nota(s) de R$ 20,00");
+        System.out.println(n10 + " nota(s) de R$ 10,00");
+        System.out.println(n5 + " nota(s) de R$ 5,00");
+        System.out.println(n2 + " nota(s) de R$ 2,00");
+        System.out.println(n1 + " nota(s) de R$ 1,00");
+
+    }
+}

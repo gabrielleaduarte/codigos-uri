@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int a = entrada.nextInt();
+        float b = entrada.nextFloat();
+
+        System.out.println(String.format("%.3f", (a/b)) + " km/l");
+
+    }
+}

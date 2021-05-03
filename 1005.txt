@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        float a = entrada.nextFloat();
+        float b = entrada.nextFloat();
+
+        System.out.println("MEDIA = " + String.format("%.5f", (((3.5*a)+(7.5*b))/11)));
+
+    }
+}
